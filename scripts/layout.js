@@ -1,0 +1,1 @@
+console.log('External JS from layout.js loaded into Shadow DOM');

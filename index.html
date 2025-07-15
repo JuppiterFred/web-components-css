@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Layout Builder with External Assets</title>
+  <script type="module" src="layout-preview.js"></script>
+  <style>
+    body { font-family: sans-serif; display: flex; gap: 1rem; }
+    .toolbox div { padding: 10px; margin: 5px; background: #ddd; cursor: grab; }
+    layout-preview { flex: 1; border: 2px dashed #ccc; min-height: 400px; }
+  </style>
+</head>
+<body>
+
+  <div class="toolbox">
+    <div draggable="true" data-type="button"
+         ondragstart="event.dataTransfer.setData('text/plain', 'button')">
+      ➕ Button
+    </div>
+  </div>
+
+  <layout-preview></layout-preview>
+
+</body>
+</html>
